@@ -1,2 +1,2 @@
 # ianislas3d.github.io
-About me and my business
+This website is about me and my business.
