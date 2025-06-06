@@ -448,6 +448,13 @@
 
 		}
 
+  @media screen and (max-width: 480px) {
+		.button.big {
+			font-size: 1.5em;
+			padding: 0 2em;
+		}
+  }
+
 /* Contact */
 
 	#contact {
