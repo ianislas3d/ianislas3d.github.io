@@ -190,17 +190,27 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
 
-  <!-- Poptrox for both icon and galleries -->
-  <script>
-    $(document).ready(function() {
-      $('.media').poptrox({
-        usePopupCaption: true,
-        usePopupCloser: true,
-        usePopupNav: true,
-        popupPadding: 20,
-        windowMargin: 50
-      });
+<!-- Poptrox for galleries and icon -->
+<script>
+  $(document).ready(function() {
+    // Enable navigation and captions for the gallery images
+    $('.gallery .media').poptrox({
+      usePopupCaption: true,
+      usePopupCloser: true,
+      usePopupNav: true,
+      popupPadding: 20,
+      windowMargin: 50
     });
-  </script>
+
+    // Disable navigation for the icon image
+    $('.icon-media').poptrox({
+      usePopupCaption: true,
+      usePopupCloser: true,
+      usePopupNav: false, // Disable arrows
+      popupPadding: 20,
+      windowMargin: 50
+    });
+  });
+</script>
 </body>
 </html>
