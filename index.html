@@ -1,151 +1,197 @@
 <!DOCTYPE HTML>
-<!--
-	Snapshot by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
-	<head>
-		<title>Ian Islas 3D</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
-	<body>
-		<div class="page-wrap">
+<head>
+  <title>Ian Islas 3D</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-			<!-- Nav --> <!--
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html" class="active"><span class="icon fa-home"></span></a></li>
-						<li><a href="gallery.html"><span class="icon fa-camera-retro"></span></a></li>
-						<li><a href="generic.html"><span class="icon fa-file-text-o"></span></a></li>
-					</ul>
-				</nav> --->
+  <style>
+    .icon-media {
+      animation: gallery 0.75s ease-out 0.4s forwards;
+      margin: 20px auto;
+      overflow: hidden;
+      opacity: 0;
+      position: relative;
+      width: 320px;
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+	  border-radius: 10em;
+    }
+    .icon-media a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+.icon-media img {
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  image-rendering: auto;
+}
 
-			<!-- Main -->
-				<section id="main">
+    .icon-media:hover img {
+      transform: scale(1.075);
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
 
-					<!-- Banner -->
-						<section id="banner">
-							<div class="inner">
-								<h1>Welcome, I am Ian Islas.</h1>
-								<p>I am a 3D artist based in Mexico, specializing in <a href="https://www.linkedin.com/pulse/what-product-visualization-katherine-jacoby"><b>product visualization</b></a>.</p>
-								<p>I help businesses connect with their customers through <a href="https://renderartstudio.com/our-stories/what-is-photorealistic-rendering/"><b>photorealistic renders</b></a>.</p>
+    <!-- Nav -->
+    <!--
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html" class="active"><span class="icon fa-home"></span></a></li>
+        <li><a href="gallery.html"><span class="icon fa-camera-retro"></span></a></li>
+        <li><a href="generic.html"><span class="icon fa-file-text-o"></span></a></li>
+      </ul>
+    </nav>
+    -->
 
-								<ul class="actions">
-									<li><a href="#galleries" class="button alt scrolly big">Continue</a></li>
-								</ul>
-							</div>
-						</section>
+    <!-- Main -->
+    <section id="main">
 
-					<!-- Gallery -->
-						<section id="galleries">
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <h1>Welcome, I am Ian Islas.</h1>
+          <p>I am a 3D artist based in Mexico, specializing in <a href="https://www.linkedin.com/pulse/what-product-visualization-katherine-jacoby"><b>product visualization</b></a>.</p>
+          <p>I help businesses connect with their customers through <a href="https://renderartstudio.com/our-stories/what-is-photorealistic-rendering/"><b>photorealistic renders</b></a>.</p>
 
-							<!-- Photo Galleries -->
-								<div class="gallery">
-									<header class="special">
-										<h2>"A bit of my work"</h2>
-									</header>
-									<div class="content">
-										<div class="media">
-											<a href="images/thumbs/take1.png"><img src="images/thumbs/take1.png" alt="" title="Fragance No. 3: Fragance shown in the dark." /></a>
-										</div>
-										<div class="media">
-											<a href="images/thumbs/jarofdies.png"><img src="images/thumbs/jarofdies.png" alt="" title="A Jar of Dice: A jar filled with some dice in the space." /></a>
-										</div>
-										<div class="media">
-											<a href="images/thumbs/pearthing.png"><img src="images/thumbs/pearthing.png" alt="" title="The Fragance of the Pear: A fragance that smells like pears." /></a>
-										</div>
-										<div class="media">
-											<a href="images/thumbs/renderfinal.png"><img src="images/thumbs/renderfinal.png" alt="" title="Jimbo from Balatro." /></a>
-										</div>
-										<div class="media">
-											<a href="images/thumbs/15m.png"><img src="images/thumbs/15m.png" alt="" title="Concept No. 1: A practice with a 15 minutes timer." /></a>
-										</div>
-										<div class="media">
-											<a href="images/thumbs/render1_final.png"><img src="images/thumbs/render1_final.png" alt="" title="A piece based on the browser game Just One Boss" /></a>
-										</div>
-										<div class="media">
-											<a href="images/thumbs/Stay tuned!.png"><img src="images/thumbs/Stay tuned!.png" alt="" title="Stay tuned!" /></a>
-										</div>
-										<div class="media">
-											<a href="images/thumbs/Stay tuned!.png"><img src="images/thumbs/Stay tuned!.png" alt="" title="Stay tuned!" /></a>
-										</div>
-									</div>
-									<footer>
-									<!--	<a href="gallery.html" class="button big">Full Gallery</a> -->
-									</footer>
-								</div>
-						</section>
+          <!-- Icon image -->
+          <div class="media icon-media">
+            <a href="images/iconianislas.png">
+              <img src="images/iconianislas.png" alt="Ian Islas Icon" title="My icon.">
+            </a>
+          </div>
 
-					<!-- Contact -->
-						<section id="contact">
-							<!-- Social -->
-								<div class="social column">
-<h3>About Me</h3>
-<p>I am a 3D artist from Mexico with over a year and a half of experience in digital art and design.</p>
+          <ul class="actions">
+            <li><a href="#galleries" class="button alt scrolly big">Continue</a></li>
+          </ul>
+        </div>
+      </section>
 
-<p>My journey began in 2023, when I started learning the fundamentals of 3D art. In 2024, I shifted my focus toward <a href="https://theartsquirrel.com/1968/what-is-non-photorealistic-rendering/"><b>non-photorealistic rendering (NPR)</b></a>, specializing in replicating 2D characters in 3D. This phase helped me build a strong foundation in Eevee rendering, including color math, floats and vectors, modeling techniques, and many transferable skills.</p>
+      <!-- Gallery -->
+      <section id="galleries">
+        <div class="gallery">
+          <header class="special">
+            <h2>"A bit of my work"</h2>
+          </header>
+          <div class="content">
+            <div class="media">
+              <a href="images/thumbs/take1.png"><img src="images/thumbs/take1.png" alt="" title="Fragance No. 3" /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/jarofdies.png"><img src="images/thumbs/jarofdies.png" alt="" title="A Jar of Dice" /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/pearthing.png"><img src="images/thumbs/pearthing.png" alt="" title="The Fragance of the Pear" /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/renderfinal.png"><img src="images/thumbs/renderfinal.png" alt="" title="Jimbo from Balatro" /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/15m.png"><img src="images/thumbs/15m.png" alt="" title="Concept No. 1" /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/render1_final.png"><img src="images/thumbs/render1_final.png" alt="" title="Just One Boss" /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/Stay tuned!.png"><img src="images/thumbs/Stay tuned!.png" alt="" title="Stay tuned!" /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/Stay tuned!.png"><img src="images/thumbs/Stay tuned!.png" alt="" title="Stay tuned!" /></a>
+            </div>
+          </div>
+          <footer>
+            <!-- <a href="gallery.html" class="button big">Full Gallery</a> -->
+          </footer>
+        </div>
+      </section>
 
-<p>By mid-2024, I became increasingly interested in <a href="https://renderartstudio.com/our-stories/what-is-photorealistic-rendering/"><b>photorealistic rendering</b></a>. I began studying Cycles shading and focused on creating small scenes using lighting setups, geometry nodes, and modeling for <a href="https://www.linkedin.com/pulse/what-product-visualization-katherine-jacoby"><b>product visualization</b></a>.</p>
+      <!-- Contact -->
+      <section id="contact">
+        <!-- Social -->
+        <div class="social column">
+          <h3>About Me</h3>
+          <p>I am a 3D artist from Mexico with over a year and a half of experience in digital art and design.</p>
+          <p>My journey began in 2023, when I started learning the fundamentals of 3D art. In 2024, I shifted my focus toward <a href="https://theartsquirrel.com/1968/what-is-non-photorealistic-rendering/"><b>non-photorealistic rendering (NPR)</b></a>, specializing in replicating 2D characters in 3D. This phase helped me build a strong foundation in Eevee rendering, including color math, floats and vectors, modeling techniques, and many transferable skills.</p>
+          <p>By mid-2024, I became increasingly interested in <a href="https://renderartstudio.com/our-stories/what-is-photorealistic-rendering/"><b>photorealistic rendering</b></a>. I began studying Cycles shading and focused on creating small scenes using lighting setups, geometry nodes, and modeling for <a href="https://www.linkedin.com/pulse/what-product-visualization-katherine-jacoby"><b>product visualization</b></a>.</p>
+          <p>Now in 2025, I’ve refined my workflow, strengthened my existing skills, and continue to expand my knowledge—supported by the latest Blender updates.</p>
 
-<p>Now in 2025, I’ve refined my workflow, strengthened my existing skills, and continue to expand my knowledge—supported by the latest Blender updates.</p>
+          <h3>Follow Me</h3>
+          <ul class="icons">
+            <li><a href="https://x.com/ianislas3d" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.instagram.com/ianislas3d/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="mailto:ianislas3d@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            <li><span><p style="font-size: 20px;">ianislas3d@gmail.com</p></span></li>
+          </ul>
+        </div>
 
-<h3>Follow Me</h3>
-<ul class="icons">
-	<li><a href="https://x.com/ianislas3d" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-	<li><a href="https://www.instagram.com/ianislas3d/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-	<li><a href="mailto:ianislas3d@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-	<li><span><p style="font-size: 20px;">ianislas3d@gmail.com</p></span></li>
-</ul>
+        <!-- Form -->
+        <div class="column">
+          <h3>Work in progress!</h3>
+          <!--
+          <h3>Get in Touch</h3>
+          <form action="#" method="post">
+            <div class="field half first">
+              <label for="name">Name</label>
+              <input name="name" id="name" type="text" placeholder="Name">
+            </div>
+            <div class="field half">
+              <label for="email">Email</label>
+              <input name="email" id="email" type="email" placeholder="Email">
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+            </div>
+            <ul class="actions">
+              <li><input value="Send Message" class="button" type="submit"></li>
+            </ul>
+          </form>
+          -->
+        </div>
+      </section>
 
-								</div>
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="copyright">
+          Page by <a href="https://ianislas3d.github.io/">Ian Islas 3D</a> with help of the template "Snapshot" by TEMPLATED.
+        </div>
+      </footer>
+    </section>
+  </div>
 
-							<!-- Form -->
-								<div class="column">
-									<h3>Work in progress!</h3>
-									<!--
-									<h3>Get in Touch</h3>
-									<form action="#" method="post">
-										<div class="field half first">
-											<label for="name">Name</label>
-											<input name="name" id="name" type="text" placeholder="Name">
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input name="email" id="email" type="email" placeholder="Email">
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-										</div>
-										<ul class="actions">
-											<li><input value="Send Message" class="button" type="submit"></li>
-										</ul>
-									</form>
-								-->
-								</div>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.poptrox.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 
-						</section>
-
-					<!-- Footer -->
-						<footer id="footer">
-							<div class="copyright">
-								Page by <a href="https://ianislas3d.github.io/">Ian Islas 3D</a> with help of the template "Snapshot" by TEMPLATED.
-							</div>
-						</footer>
-				</section>
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <!-- Poptrox for both icon and galleries -->
+  <script>
+    $(document).ready(function() {
+      $('.media').poptrox({
+        usePopupCaption: true,
+        usePopupCloser: true,
+        usePopupNav: true,
+        popupPadding: 20,
+        windowMargin: 50
+      });
+    });
+  </script>
+</body>
 </html>
