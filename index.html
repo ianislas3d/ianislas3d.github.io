@@ -45,44 +45,7 @@
     transform: scale(1.075);
   }
 
-  /* Social icons */
-  ul.icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75em;
-    padding: 0;
-    list-style: none;
-    margin-top: 1em;
-  }
-
-  ul.icons li {
-    display: inline-flex;
-  }
-
-  ul.icons a.icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5em;
-    height: 2.5em;
-    border-radius: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    transition: background 0.3s ease;
-    text-decoration: none;
-  }
-
-  ul.icons a.icon:hover {
-    background: rgba(255, 255, 255, 0.15);
-  }
-
-  ul.icons a.icon img {
-    width: 1.25em;
-    height: 1.25em;
-    object-fit: contain;
-    display: block;
-  }
-
+  /* Responsive size for smaller screens */
   @media screen and (max-width: 480px) {
     .icon-media {
       width: 210px;
@@ -93,6 +56,17 @@
 <body>
   <div class="page-wrap">
 
+    <!-- Nav -->
+    <!--
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html" class="active"><span class="icon fa-home"></span></a></li>
+        <li><a href="gallery.html"><span class="icon fa-camera-retro"></span></a></li>
+        <li><a href="generic.html"><span class="icon fa-file-text-o"></span></a></li>
+      </ul>
+    </nav>
+    -->
+
     <!-- Main -->
     <section id="main">
 
@@ -100,14 +74,16 @@
       <section id="banner">
         <div class="inner">
           <h1 style="margin-top: 12px; margin-bottom: 15px;">Welcome, I am Ian Islas.</h1>
-          <p style="margin-top: 15px; margin-bottom: 12px;">
-            I am a 3D artist based in Mexico, specializing in 
-            <a href="https://www.linkedin.com/pulse/what-product-visualization-katherine-jacoby"><b>product visualization</b></a>.
-          </p>
-          <p style="margin-top: 12px; margin-bottom: 15px;">
-            I help businesses connect with their customers through 
-            <a href="https://renderartstudio.com/our-stories/what-is-photorealistic-rendering/"><b>photorealistic renders</b></a>.
-          </p>
+<p style="margin-top: 15px; margin-bottom: 12px;">
+  I am a 3D artist based in Mexico, specializing in 
+  <a href="https://www.linkedin.com/pulse/what-product-visualization-katherine-jacoby"><b>product visualization</b></a>.
+</p>
+<p style="margin-top: 12px; margin-bottom: 15px;">
+  I help businesses connect with their customers through 
+  <a href="https://renderartstudio.com/our-stories/what-is-photorealistic-rendering/"><b>photorealistic renders</b></a>.
+</p>          <!-- Icon image -->
+
+
           <ul class="actions">
             <li><a href="#galleries" class="button alt scrolly big">Continue</a></li>
           </ul>
@@ -121,20 +97,40 @@
             <h2>"A bit of my work"</h2>
           </header>
           <div class="content">
-            <div class="media"><a href="images/thumbs/take1.png"><img src="images/thumbs/take1.png" alt="" title="Fragance in the dark." /></a></div>
-            <div class="media"><a href="images/thumbs/jarofdies.png"><img src="images/thumbs/jarofdies.png" alt="" title="A Jar with dice inside." /></a></div>
-            <div class="media"><a href="images/thumbs/pearthing.png"><img src="images/thumbs/pearthing.png" alt="" title="Fragance that smells like pears." /></a></div>
-            <div class="media"><a href="images/thumbs/renderfinal.png"><img src="images/thumbs/renderfinal.png" alt="" title="Jimbo from Balatro." /></a></div>
-            <div class="media"><a href="images/thumbs/15m.png"><img src="images/thumbs/15m.png" alt="" title="Concept made in 15 minutes." /></a></div>
-            <div class="media"><a href="images/thumbs/render1_final.png"><img src="images/thumbs/render1_final.png" alt="" title="Just One Boss based art." /></a></div>
-            <div class="media"><a href="images/thumbs/Ian Carlo Islas Ramirez Entrada.png"><img src="images/thumbs/Ian Carlo Islas Ramirez Entrada.png" alt="" title="Piece of a 1930s-ish character." /></a></div>
-            <div class="media"><a href="images/thumbs/Stay tuned!.png"><img src="images/thumbs/Stay tuned!.png" alt="" title="Stay tuned!" /></a></div>
+            <div class="media">
+              <a href="images/thumbs/take1.png"><img src="images/thumbs/take1.png" alt="" title="Fragance in the dark." /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/jarofdies.png"><img src="images/thumbs/jarofdies.png" alt="" title="A Jar with dice inside." /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/pearthing.png"><img src="images/thumbs/pearthing.png" alt="" title="Fragance that smells like pears." /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/renderfinal.png"><img src="images/thumbs/renderfinal.png" alt="" title="Jimbo from Balatro." /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/15m.png"><img src="images/thumbs/15m.png" alt="" title="Concept made in 15 minutes." /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/render1_final.png"><img src="images/thumbs/render1_final.png" alt="" title="Just One Boss based art." /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/Ian Carlo Islas Ramirez Entrada.png"><img src="images/thumbs/Ian Carlo Islas Ramirez Entrada.png" alt="" title="Piece of a 1930s-ish character." /></a>
+            </div>
+            <div class="media">
+              <a href="images/thumbs/Stay tuned!.png"><img src="images/thumbs/Stay tuned!.png" alt="" title="Stay tuned!" /></a>
+            </div>
           </div>
+          <footer>
+            <!-- <a href="gallery.html" class="button big">Full Gallery</a> -->
+          </footer>
         </div>
       </section>
 
       <!-- Contact -->
       <section id="contact">
+        <!-- Social -->
         <div class="social column">
           <h3>About Me</h3>
           <p>I am a 3D artist from Mexico with over a year and a half of experience in digital art and design.</p>
@@ -142,37 +138,57 @@
           <p>By mid-2024, I became increasingly interested in <a href="https://renderartstudio.com/our-stories/what-is-photorealistic-rendering/"><b>photorealistic rendering</b></a>. I began studying Cycles shading and focused on creating small scenes using lighting setups, geometry nodes, and modeling for <a href="https://www.linkedin.com/pulse/what-product-visualization-katherine-jacoby"><b>product visualization</b></a>.</p>
           <p>Now in 2025, I’ve refined my workflow, strengthened my existing skills, and continue to expand my knowledge—supported by the latest Blender updates.</p>
 
-          <h3>Contact & Follow Me</h3>
-          <ul class="icons">
-            <li><a href="https://x.com/ianislas3d" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="https://www.instagram.com/ianislas3d/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="mailto:ianislas3d@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-            <li><a href="https://ianislas3d.tumblr.com" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-            <li>
-              <a href="https://bsky.app/profile/ianislas3d.bsky.social" class="icon">
-                <img src="images/svg logos/Bluesky_Logo.svg" alt="Bluesky" />
-                <span class="label">Bluesky</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://artfight.net/~ianislas3d" class="icon">
-                <img src="images/svg logos/Artfight_logo.svg" alt="ArtFight" />
-                <span class="label">ArtFight</span>
-              </a>
-            </li>
-            <li><span><p style="font-size: 20px;">ianislas3d@gmail.com</p></span></li>
-          </ul>
+<h3>Contact & Follow Me</h3>
+<ul class="icons">
+  <li><a href="https://x.com/ianislas3d" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+  <li><a href="https://www.instagram.com/ianislas3d/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+  <li><a href="mailto:ianislas3d@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+  <li><a href="https://ianislas3d.tumblr.com" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+  <li>
+    <a href="https://bsky.app/profile/ianislas3d.bsky.social" class="icon">
+      <img src="images/svg logos/Bluesky_Logo.svg" alt="Bluesky" style="width: 2em; height: 2em; vertical-align: middle;">
+      <span class="label">Bluesky</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://artfight.net/~ianislas3d" class="icon">
+      <img src="images/svg logos/Artfight_logo.svg" alt="ArtFight" style="width: 2em; height: 2em; vertical-align: middle;">
+      <span class="label">ArtFight</span>
+    </a>
+  </li>
+  <li><span><p style="font-size: 20px;">ianislas3d@gmail.com</p></span></li>
+</ul>
 
-          <div class="column">
-            <h3>"Working with me looks like this"</h3>
-            <div class="media icon-media">
-              <a href="images/iconianislas.png">
-                <img src="images/iconianislas.png" alt="Ian Islas Icon" title="My icon">
-              </a>
-            </div>
-
-            <h4>Work in Progress</h4>
+        <!-- Form -->
+        <div class="column">
+          <h3>"Working with me looks like this"</h3>
+           <div class="media icon-media">
+            <a href="images/iconianislas.png">
+              <img src="images/iconianislas.png" alt="Ian Islas Icon" title="My icon">
+            </a>
           </div>
+
+          <h4>Work in Progress</h4>
+          <!--
+          <h3>Get in Touch</h3>
+          <form action="#" method="post">
+            <div class="field half first">
+              <label for="name">Name</label>
+              <input name="name" id="name" type="text" placeholder="Name">
+            </div>
+            <div class="field half">
+              <label for="email">Email</label>
+              <input name="email" id="email" type="email" placeholder="Email">
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+            </div>
+            <ul class="actions">
+              <li><input value="Send Message" class="button" type="submit"></li>
+            </ul>
+          </form>
+          -->
         </div>
       </section>
 
@@ -193,25 +209,29 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
 
-  <!-- Poptrox -->
-  <script>
-    $(document).ready(function () {
-      $('.gallery .media').poptrox({
-        usePopupCaption: true,
-        usePopupCloser: true,
-        usePopupNav: true,
-        popupPadding: 20,
-        windowMargin: 50
-      });
-
-      $('.icon-media').poptrox({
-        usePopupCaption: true,
-        usePopupCloser: true,
-        usePopupNav: false,
-        popupPadding: 20,
-        windowMargin: 50
-      });
+<!-- Poptrox for galleries and icon -->
+<script>
+  $(document).ready(function() {
+    // Enable navigation and captions for the gallery images
+    $('.gallery .media').poptrox({
+      usePopupCaption: true,
+      usePopupCloser: true,
+      usePopupNav: true,
+      popupPadding: 20,
+      windowMargin: 50
     });
-  </script>
+
+    // Disable navigation for the icon image
+    $('.icon-media').poptrox({
+      usePopupCaption: true,
+      usePopupCloser: true,
+      usePopupNav: false, // Disable arrows
+      popupPadding: 20,
+      windowMargin: 50
+    });
+  });
+</script>
 </body>
 </html>
+
+
