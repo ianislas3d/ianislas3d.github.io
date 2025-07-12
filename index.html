@@ -27,19 +27,20 @@
     width: 100%;
     height: 100%;
   }
-
-  .icon-media img {
-    transition: transform 0.2s ease-in-out;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: transparent;
-    image-rendering: auto;
-  }
+    
+.icon-media img {
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Changed from contain to cover */
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  image-rendering: auto;
+  border-radius: 50%; /* Ensures the image also conforms to the circular shape */
+}
 
   .icon-media:hover img {
     transform: scale(1.075);
